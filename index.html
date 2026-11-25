@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Glass Desert — Перемикач стану</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Чекбокс стоїть першим, щоб через ~ можна було міняти сусідні блоки -->
+  <input type="checkbox" id="fountain-switch" class="toggle-input">
+
+  <div class="world">
+    <header class="header">
+      <h1>The Glass Desert</h1>
+      <div class="sand-badge">
+        <img src="images/silky-sand.png" alt="Silky Sand" onerror="this.style.display='none'">
+        <span>Silky Sand</span>
+      </div>
+    </header>
+
+    <main class="center-stage">
+      <!-- Тексти, які міняються місцями -->
+      <p class="status-text status-dry">Фонтан спить — натисни, щоб оживити пустелю</p>
+      <p class="status-text status-wet">Бірюзова вода пробудила оазис!</p>
+
+      <!-- Твоя одна картинка фонтану -->
+      <label for="fountain-switch" class="fountain-btn" title="Натисни на фонтан">
+        <img src="images/fountain.png" alt="Фонтан">
+        <span class="oasis-ring"></span>
+      </label>
+    </main>
+
+    <section class="info-panel">
+      <h2>Silky Sand</h2>
+      <p>Шовковистий пісок Скляної пустелі, що переливається золотисто-рожевим відливом.</p>
+    </section>
+  </div>
+
+</body>
+</html>
